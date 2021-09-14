@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <title>Sidebar Navigation</title>
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="logo-content">
+        <div class="logo">
+          <i class="bx bxl-javascript"></i>
+          <p>ZaldeeLab</p>
+        </div>
+        <i class="bx bx-menu" id="btn"></i>
+      </div>
+      <ul class="nav-list">
+        <li>
+          <a href="#">
+            <i class="bx bx-search"></i>
+            <input type="text" placeholder="Search..." />
+          </a>
+          <span class="tooltip">Search</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-grid-alt"></i>
+            <span class="links-name">Dashboard</span>
+          </a>
+          <span class="tooltip">Dashboard</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-user"></i>
+            <span class="links-name">User</span>
+          </a>
+          <span class="tooltip">User</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-chat"></i>
+            <span class="links-name">Messages</span>
+          </a>
+          <span class="tooltip">Messages</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-pie-chart-alt-2"></i>
+            <span class="links-name">Analytics</span>
+          </a>
+          <span class="tooltip">Analytics</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-folder"></i>
+            <span class="links-name">File Manager</span>
+          </a>
+          <span class="tooltip">File Manager</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-cart"></i>
+            <span class="links-name">Order</span>
+          </a>
+          <span class="tooltip">Order</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-heart"></i>
+            <span class="links-name">Saved</span>
+          </a>
+          <span class="tooltip">Saved</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-cog"></i>
+            <span class="links-name">Setting</span>
+          </a>
+          <span class="tooltip">Setting</span>
+        </li>
+      </ul>
+      <div class="profile-content">
+        <div class="profile">
+          <div class="profile-detail">
+            <img src="images/profile-square-extra-small.png" alt="" />
+            <div class="name_job">
+              <div class="name">Albatros</div>
+              <div class="job">Web Designer</div>
+            </div>
+          </div>
+          <i class="bx bx-log-out" id="log-out"></i>
+        </div>
+      </div>
+    </div>
+    <div class="home-content">
+      <div class="text">Home Content</div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+        illum totam ex voluptates dignissimos neque esse quasi quaerat ab ipsa
+        eum, quam illo delectus odit laboriosam laborum sint. Magnam, fuga!
+      </p>
+    </div>
+
+    <script>
+      let btn = document.querySelector("#btn");
+      let sidebar = document.querySelector(".sidebar");
+      let search = document.querySelector(".bx-search");
+
+      btn.onclick = () => {
+        sidebar.classList.toggle("active");
+      };
+      search.onclick = () => {
+        sidebar.classList.toggle("active");
+      };
+    </script>
+  </body>
+</html>
